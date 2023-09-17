@@ -1,0 +1,39 @@
+
+
+.hero{
+    margin-top: 4.3rem;
+    background-color: var(--main-gray);
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50rem;
+    padding-bottom: 5rem;
+}
+
+.title,
+.name {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+}
+
+.title{
+    color: var(--main-red);
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+.name{
+    color: var(--main-white);
+    padding: 0;
+    margin: 0;
+}

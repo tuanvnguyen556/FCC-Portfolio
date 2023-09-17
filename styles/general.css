@@ -1,4 +1,16 @@
+:root{
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
 body {
     width: 100vw;
     height: 100vh;
+    background-color: var(--main-white);
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
