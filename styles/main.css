@@ -1,0 +1,161 @@
+main {
+    background-color: var(--main-blue);
+    width: 100%;
+    margin-top: -2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.project-title{
+    color: var(--main-white);
+    text-align: center;
+    font-size: 2.6rem;
+    border-bottom: 2px solid var(--main-white);
+}
+
+.grid-cell{
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+}
+
+.grid-title{
+    background-color: var(--main-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-title h3{
+    color: var(--main-white);
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.image-contain{
+    width: 100%;
+}
+@media (min-width: 500px){
+    main{
+        height: 220rem;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(6, 500px);
+        max-width: 1300px;
+        width: 96%;
+        max-width: 1300px;
+        height: 100rem;
+        gap: 2.5rem;
+        padding-right: 1rem;
+    }
+    
+    .grid-cell{
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+    }
+
+    .project-title{
+        padding-top: 5rem;
+        padding-bottom: 0.3rem;
+        margin-bottom: 3.8rem;
+        width: 20rem;
+    }
+}
+
+
+@media (min-width: 730px){
+    main{
+        height: 120rem;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 500px 500px;
+        max-width: 1300px;
+        width: 96%;
+        max-width: 1300px;
+        height: 100rem;
+        gap: 2.5rem;
+        padding-right: 1rem;
+    }
+    
+    .grid-cell{
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+    }
+
+    .project-title{
+        padding-top: 5rem;
+        padding-bottom: 0.3rem;
+        margin-bottom: 3.8rem;
+        width: 40rem;
+    }
+
+    .grid-title{
+        height: 5rem;
+        margin-top: -5px;
+    }
+
+    .image{
+        height: 400px;
+    }
+}
+
+
+
+@media (min-width: 1090px){
+    
+    main{
+        height: 100rem;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 480px 480px 480px;
+        max-width: 1300px;
+        width: 96%;
+        max-width: 1300px;
+        height: 63rem;
+        gap: 2.5rem;
+        padding-right: 1rem;
+    }
+    
+    .grid-cell{
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+    }
+
+    .project-title{
+        padding-top: 5rem;
+        padding-bottom: 0.3rem;
+        margin-bottom: 3.8rem;
+        width: 40rem;
+    }
+
+    .grid-title{
+        height: 5rem;
+        margin-top: -5px;
+    }
+
+    .image{
+        height: 400px;
+    }
+}
+
+
+
+
+
+
