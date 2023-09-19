@@ -9,6 +9,7 @@
     background-color: var(--main-red);
     display: flex;
     justify-content: flex-end;
+    z-index: 999;
 
 }
 nav{
@@ -18,7 +19,7 @@ nav{
     row-gap: 2rem;
     width: 20rem;
     font-family: "Raleway", sans-serif;
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 nav a {
     text-decoration: none;
@@ -27,4 +28,8 @@ nav a {
     font-size: 22px;
     font-family: "Raleway", sans-serif;
     
+}
+
+a:hover p{
+    color: var(--main-gray);
 }

@@ -41,10 +41,87 @@ main {
 
 .image-contain{
     width: 100%;
+    cursor: pointer;
+}
+
+.grid-container{
+    margin-bottom: 1rem;
+}
+.button-show{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    width: 140px;
+
+}
+.button-show div{
+    display: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    transition: opacity 0.15s;
+    margin-left: -1.8rem;
+    margin-top: 0.2rem;
+    transition: margin-left 0.15s;
+}
+.button-show:hover div{
+    font-size: 1.8rem;
+    margin-top: 0rem;
+    margin-left: -1.6rem;
+}
+
+.show:hover{
+    background-color: var(--main-red);
+}
+.show{
+    margin-left: -1rem;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    height: 2.6rem;
+    width: 8.3rem;
+    border: none;
+    padding-left: 1remm;
+    padding-right: 2rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.grid-title{
+    position: relative;
+}
+
+.great,
+.less{
+    display: absolute;
+    color: rgb(229, 105, 37);
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.15s;
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.grid-cell:hover .great,
+.grid-cell:hover .less
+{
+    opacity: 1;
+}
+
+.less{
+    margin-right: 0.5rem;
+}
+
+.great{
+    margin-left: 0.5rem;
 }
 @media (min-width: 500px){
     main{
-        height: 220rem;
+        height: 232rem;
     }
     .grid-container{
         display: grid;
@@ -53,7 +130,7 @@ main {
         max-width: 1300px;
         width: 96%;
         max-width: 1300px;
-        height: 100rem;
+        height: 204rem;
         gap: 2.5rem;
         padding-right: 1rem;
     }
@@ -70,6 +147,17 @@ main {
         margin-bottom: 3.8rem;
         width: 20rem;
     }
+
+    .image{
+        margin-bottom: -4px;
+        height: 430px;
+    }
+    #quote,
+    #tribute{
+        height: 430px;
+    }
+
+    
 }
 
 
@@ -84,7 +172,7 @@ main {
         max-width: 1300px;
         width: 96%;
         max-width: 1300px;
-        height: 100rem;
+        height: 95rem;
         gap: 2.5rem;
         padding-right: 1rem;
     }
@@ -103,12 +191,17 @@ main {
     }
 
     .grid-title{
-        height: 5rem;
-        margin-top: -5px;
+        height: 4.2rem;
     }
 
     .image{
-        height: 400px;
+        margin-bottom: -4px;
+        height: 432px;
+    }
+
+    #quote,
+    #tribute{
+        height: 332px;
     }
 }
 
@@ -117,7 +210,7 @@ main {
 @media (min-width: 1090px){
     
     main{
-        height: 100rem;
+        height: 90rem;
     }
     .grid-container{
         display: grid;
@@ -126,7 +219,7 @@ main {
         max-width: 1300px;
         width: 96%;
         max-width: 1300px;
-        height: 63rem;
+        height: 66rem;
         gap: 2.5rem;
         padding-right: 1rem;
     }
@@ -150,7 +243,11 @@ main {
     }
 
     .image{
-        height: 400px;
+        height: 405px;
+    }
+    #quote,
+    #tribute{
+        height: 405px;
     }
 }
 

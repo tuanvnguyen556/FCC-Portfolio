@@ -13,9 +13,26 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
 }
+
+
 
 html{
     scroll-behavior: smooth;
     scroll-padding-bottom: 5rem;
+}
+
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: gray;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-blue);
 }
