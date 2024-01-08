@@ -1,7 +1,7 @@
 # FCC-Portfolio
 <ul>
   <li>
-    Add /fcc-portfolio.html to the domain 
+    link:https://tuanvnguyen556.github.io/FCC-Portfolio/fcc-portfolio.html
   </li>
 </ul>
 
